@@ -1,12 +1,9 @@
 import 'package:awzany/core/router/app_routes.dart';
 import 'package:flutter/material.dart';
-import '../../features/auth/splash_screen.dart';
 
 class AppRoute {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case AppRoutes.splashScreen:
-        return MaterialPageRoute(builder: (_) => const SplashScreen());
 
       default:
         return _buildRoute(
