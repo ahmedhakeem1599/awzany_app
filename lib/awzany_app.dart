@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'core/router/app_router.dart';
+import 'core/router/app_routes.dart';
 
 class AwzanyApp extends StatelessWidget {
   final AppRoute appRouter;
@@ -10,7 +11,7 @@ class AwzanyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(360, 690),
+      designSize: const Size(430, 932),
       minTextAdapt: true,
       splitScreenMode: true,
       // Use builder only if you need to use library outside ScreenUtilInit context
@@ -18,6 +19,7 @@ class AwzanyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           onGenerateRoute: appRouter.generateRoute,
+          initialRoute: AppRoutes.onboardingScreens,
         );
       },
     );

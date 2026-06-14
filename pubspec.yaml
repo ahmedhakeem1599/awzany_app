@@ -22,6 +22,7 @@ dependencies:
   cached_network_image_ce: ^4.7.0
   flutter_bloc: ^9.1.1
   flutter_native_splash: ^2.4.8
+  smooth_page_indicator: ^2.0.1
 
 
 dev_dependencies:
@@ -39,8 +40,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - 
+  assets:
+   - assets/onboarding/
 
   # To add custom fonts to your application, add a fonts section here
 

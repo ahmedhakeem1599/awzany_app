@@ -1,9 +1,14 @@
 import 'package:awzany/core/router/app_routes.dart';
+import 'package:awzany/features/auth/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRoute {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case AppRoutes.onboardingScreens:
+        return MaterialPageRoute(
+          builder: (_) => OnboardingScreen()
+        );
 
       default:
         return _buildRoute(
