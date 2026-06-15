@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'core/constrants/app_colors.dart';
 import 'core/router/app_router.dart';
-import 'core/router/app_routes.dart';
+
 
 class AwzanyApp extends StatelessWidget {
   final AppRoute appRouter;
@@ -17,9 +18,13 @@ class AwzanyApp extends StatelessWidget {
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_, child) {
         return MaterialApp(
+          title: 'Awzany',
           debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+            scaffoldBackgroundColor: AppColors.black,
+          ),
+          home: child,
           onGenerateRoute: appRouter.generateRoute,
-          initialRoute: AppRoutes.onboardingScreens,
         );
       },
     );

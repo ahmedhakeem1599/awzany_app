@@ -1,8 +1,10 @@
-import 'package:awzany/features/auth/onboarding/widget/onboarding_model.dart';
-import 'package:awzany/features/auth/onboarding/widget/onboarding_page.dart';
+import 'package:awzany/core/helper/extensions.dart';
+import 'package:awzany/features/auth/presentation/screens/onboarding/widget/onboarding_model.dart';
+import 'package:awzany/features/auth/presentation/screens/onboarding/widget/onboarding_page.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constrants/app_assets.dart';
-import '../../../core/constrants/app_strings.dart';
+import '../../../../../core/constrants/app_assets.dart';
+import '../../../../../core/constrants/app_strings.dart';
+import '../../../../../core/router/app_routes.dart';
 
 
 class OnboardingScreen extends StatefulWidget {
@@ -39,9 +41,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   void nextPage() {
     if (currentPage == pages.length - 1) {
-
-      /// Navigate Login
-
+      context.pushNamedAndRemoveUntil(AppRoutes.loginScreen);
       return;
     }
 
@@ -52,7 +52,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   void getStarted() {
-
+    context.pushNamedAndRemoveUntil(AppRoutes.loginScreen);
   }
 
   @override

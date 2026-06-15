@@ -11,4 +11,10 @@ class AppStrings {
   static const String descOne = "Define your fitness goals and let  Awzany guide you with training plans made just for you.";
   static const String descTwo = "Stay consistent and build the habit of daily training to reach your fitness goals faster.";
   static const String descThree = "Track your weight and weekly activity Celebrate every achievement on your fitness journey.";
+
+  static const String welcome = "Welcome Back!";
+  static const String welcomeDesc = "Your favorite training are just a few taps.";
+  static const String loginWithGoogle = "Log in with Google";
+  static const String loginWithApple = "Log in with Apple";
+
 }

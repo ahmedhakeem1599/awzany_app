@@ -22,4 +22,16 @@ class TextStyles {
     fontWeight: FontWeightHelper.semiBold,
   );
 
+  static TextStyle font32LightGrayBold = TextStyle(
+    color: AppColors.lightGray,
+    fontSize: 32.sp,
+    fontWeight: FontWeightHelper.bold,
+  );
+
+  static TextStyle font16SilverRegular = TextStyle(
+    color: AppColors.silverGray,
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.regular,
+  );
+
 }

@@ -1,10 +1,10 @@
 import 'package:awzany/core/helper/spacing.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '../../../../core/constrants/app_colors.dart';
-import '../../../../core/constrants/app_strings.dart';
-import '../../../../core/themes/text_styles.dart';
-import '../../../../shared/app_buttom.dart';
+import '../../../../../../core/constrants/app_colors.dart';
+import '../../../../../../core/constrants/app_strings.dart';
+import '../../../../../../core/themes/text_styles.dart';
+import '../../../../../../shared/app_buttom.dart';
 import 'onboarding_model.dart';
 
 
@@ -41,8 +41,8 @@ class OnboardingPage extends StatelessWidget {
 
                 Align(
                   alignment: Alignment.topRight,
-                  child: TextButton(
-                    onPressed: onSkip,
+                  child: GestureDetector(
+                    onTap: onSkip,
                     child: Text(
                       AppStrings.skip,
                       style: TextStyles.font16WhiteRegular,
